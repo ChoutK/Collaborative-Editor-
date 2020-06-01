@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="lib/codemirror.css">
+    <script src="lib/codemirror.js"></script>
+    <script>
+      var editor = CodeMirror.fromTextArea(myTextarea, {
+        lineNumbers: true
+      });
+    </script>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <textarea id=”editor”></textarea>
+    <form>
+      Filename:<input type="text">
+      <input type="submit">
+    </form>
+  </body>
+</html>
